@@ -67,10 +67,10 @@ class DataTransformation:
             logging.info(f'Train Data Before Transformation:\n {train_df.head()}')
             logging.info(f'Test Data Before Transformation:\n {test_df.head()}')
 
-            input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
+            input_feature_train_df=train_df.drop(columns=[target_column_name])
             target_feature_train_df=train_df[target_column_name]
 
-            input_feature_test_df=test_df.drop(columns=[target_column_name],axis=1)
+            input_feature_test_df=test_df.drop(columns=[target_column_name])
             target_feature_test_df=test_df[target_column_name]
 
             logging.info(f'Input Train Data After Transformation: \n {input_feature_train_df.head()}')
